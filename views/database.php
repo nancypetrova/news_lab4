@@ -2,7 +2,7 @@
 	error_reporting(0);
 	$db_host = 'localhost';
 	$db_user = 'root';
-	$db_password = 'root';
+	$db_password = 'M_2u4s8e6@';
 	$db_name = 'blog';
 
 	$link = mysqli_connect($db_host, $db_user, $db_password, $db_name);
