@@ -16,7 +16,7 @@
         </div>
         <a>Панелька</a>
         <div class="blog">
-        <!-- <?php foreach ($articles as $a): ?>  -->
+        <?php foreach ($articles as $a): ?>
             <div>
                 <h3><a href="article.php?id=<?=$a['id']?>">
                         <?=$a['title']?>
@@ -25,7 +25,7 @@
                 <em>Опубликовано:<?=$a['date']?></em>
                 <p><?=articles_intro($a['content'])?>...</p>
             </div>
-        <!-- <?php endforeach ?>  -->
+        <?php endforeach ?>
         </div>
 </body>
 </html>

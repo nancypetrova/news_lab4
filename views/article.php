@@ -1,9 +1,22 @@
-<?php
-    require_once 'database.php' ;
-    require_once 'models/articles.php' ;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+</head>
+<body>
+    <div>
+        <h1>Тест</h1>
+        <div>
+            <div>
+                <h3><?=$article['title']?></h3>
+                <em>Опубликовано:<?=$article['date']?></em>
+                <p><?=$article['content']?></p>
+            </div>
+        </div>
+    </div>
 
-    $link = mysqli_connect($db_host, $db_user, $db_password, $db_name);
-    $article = articles_get($link, $_GET['id']);
-
-    include("views/article.php")
-?>
+</body>
+</html>
