@@ -12,20 +12,20 @@
 <body>
         <header>Новостной портал</header>
         <div class="hellopage">
-            Новостной портал о пони
+            Новостной портал
         </div>
-        <a>Панель управления</a>
+        <a href="admin">Панель управления</a>
         <div class="blog">
-        <?php foreach ($articles as $a): ?>
+        <!-- <?php foreach ($articles as $a): ?>  -->
             <div>
                 <h3><a href="article.php?id=<?=$a['id']?>">
                         <?=$a['title']?>
                         Заголовок!
                     </a></h3>
-                <em>Опубликовано:<?=$a['date']?></em>
+                <em>Опубликовано: <?=$a['date']?></em>
                 <p><?=articles_intro($a['content'])?>...</p>
             </div>
-        <?php endforeach ?>
+        <!-- <?php endforeach ?>  -->
         </div>
 </body>
 </html>
