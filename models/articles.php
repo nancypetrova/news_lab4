@@ -83,7 +83,7 @@
         return mysqli_affected_rows($link);
     }
 
-    function articles_intro($text, $len = 255){
+    function articles_intro($text, $len = 530){
         return mb_substr($text, 0, $len);
     }
 ?>

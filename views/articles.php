@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
+    <title>Новостной портал</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800&amp;subset=cyrillic" rel="stylesheet">
     <style>
 *{
@@ -17,14 +17,11 @@ body{
 }
 header{
     z-index:100;
-    /* display: grid;
-    align-content: center; */
     position: fixed;
     width: 100vw;
     height: 50px;
     background: white;
     color: rgb(0, 0, 0);
-    /* text-align: center; */
     font-weight: 800;
     font-size: 25pt;
     box-shadow: 0px 1px 4px black;
@@ -77,7 +74,6 @@ header a{
     height: 100vh;
     top:100px;
     left:690px;
-    /* background: rgb(201, 201, 201); */
     background-size: cover;
     color: white;
     text-align: right;
@@ -120,7 +116,7 @@ header a{
         <header>Новостной портал о жизни ПОНИ <a href="admin">Панель управления</a></header>
         <div class="overflow"></div> 
         <div class="fullscreen-bg">
-            <video loop muted autoplay center poster="img/back1.jpg" class="fullscreen-bg__video">
+            <video loop muted autoplay center poster="img/back.jpg" class="fullscreen-bg__video">
            <?php echo "<source src='img/back.mp4' type='video/mp4'>" ?>
             </video>
         </div>  
@@ -142,6 +138,7 @@ header a{
                     </a></h3>
                 <em>Опубликовано: <?=$a['date']?></em>
                 <p><?=articles_intro($a['content'])?>...</p>
+
             </div>
         <?php endforeach ?> 
         </div>

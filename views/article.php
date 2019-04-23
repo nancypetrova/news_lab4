@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
+    <title>Просмотр новости</title>
 </head>
 <body>
     <div>
-        <h1>Тест</h1>
-        <div>
+            <a href="http://localhost/news/index.php"><h1>На главную</h1></a>
             <div>
                 <h3><?=$article['title']?></h3>
                 <em>Опубликовано:<?=$article['date']?></em>
